@@ -748,7 +748,14 @@
     <!-- Battery styles -->
     <string name="icon_with_text">Icon with text</string>
     <string name="icon_with_centered_text">Icon with centered text</string>
-    <string name="circlemod">CircleMOD</string>
+    <string name="circlemod">AOKP CircleMOD</string>
+    <string name="full_circle">CM CircleMOD</string>
+    <string name="gauge">Gauge</string>
+    <string name="axiom_honeycomb">Axiom Honeycomb</string>
+    <string name="axiom_droid">Axiom Droid</string>
+    <string name="axiom_sphere">Axiom Sphere</string>
+    <string name="numbers">Numbers</string>
+    <string name="digital_numbers">Digital Numbers</string>
 
     <!-- NavBar -->
     <string name="right">Right</string>
