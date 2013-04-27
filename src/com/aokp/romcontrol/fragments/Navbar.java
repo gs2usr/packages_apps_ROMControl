@@ -51,6 +51,9 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.internal.util.aokp.AwesomeConstants;
+import com.android.internal.util.aokp.AwesomeConstants.AwesomeConstant;
+import com.android.internal.util.aokp.NavBarHelpers;
 import com.aokp.romcontrol.AOKPPreferenceFragment;
 import com.aokp.romcontrol.R;
 import com.aokp.romcontrol.util.Helpers;
