@@ -30,12 +30,12 @@
   <string name="title_statusbar_toggles">Přepínače ve stavové liště</string>
   <string name="title_statusbar_battery">Baterie ve stavové liště</string>
   <string name="title_navbar">Navigační panel</string>
+  <string name="title_navring">Navigační kruh</string>
   <string name="title_power_menu">Menu napájení</string>
   <string name="title_led">Ovládání LED</string>
   <string name="title_spen">S Pen gesta</string>
   <string name="title_lockscreens">Možnosti zamčené obrazovky</string>
   <string name="title_lockscreens_targets">Položky zamčené obrazovky</string>
-  <string name="title_navring">Navigační kruh</string>
   <string name="title_sound">Nastavení zvuku</string>
   <string name="title_weather">Nastavení počasí</string>
   <string name="title_performance">Nastavení výkonu</string>
@@ -63,6 +63,8 @@
   <string name="advanced_settings">Pokročilá nastavení</string>
   <string name="misc_short">Ostatní</string>
   <string name="custom_app_icon_successfully"> ikona úspěšně nastavena!</string>
+  <string name="text_on">Zap</string>
+  <string name="text_off">Vyp</string>
   <!--Power Menu-->
   <string name="title_show_power_saver">Zobrazit spořič energie</string>
   <string name="title_show_screenshot">Zobrazit snímek obrazovky</string>
@@ -79,6 +81,10 @@
   <string name="spen_long_title">Akce dlouhého stisku</string>
   <string name="spen_enable">Zapnout S Pen gesta</string>
   <string name="spen_enable_summary">Nastavit vlastní akce S Pen gest</string>
+  <string name="spen_extras_cat">S Pen extra</string>
+  <string name="spen_gestures_cat">S Pen gesta</string>
+  <string name="enable_stylus_pointer_title">Zapnout ukazatel S Pen</string>
+  <string name="enable_stylus_pointer_summary">Zapnout kurzor myši při používání S Pen</string>
   <!--Power Saving-->
   <string name="title_pref_powersaving_pref_mode">Zapnout spořič energie</string>
   <string name="summary_pref_powersaving_pref_mode">@null</string>
@@ -96,34 +102,18 @@
   <string name="aokp">Android Open Kang Project</string>
   <string name="aokp_website_title">Web AOKP</string>
   <string name="aokp_website_summary">www.aokp.co - Všechny nejnovější verze k nalezení zde.</string>
-  <string name="aokp_source_title">Zdrojové kódy AOKP</string>
-  <string name="aokp_source_summary">AOKP má otevřený kód. Vždy je možné si prohlédnout nejnovější verzi na github.com/aokp</string>
   <string name="aokp_review_title">Revize AOKP kódu</string>
   <string name="aokp_review_summary">Gerrit server AOKP pro odesílání a testování patchů</string>
   <string name="aokp_irc_title">Připojit se na IRC</string>
   <string name="aokp_irc_summary">#teamkang @ irc.freenode.net</string>
   <string name="about_aokp">O AOKP</string>
   <string name="about_aokp_summary">@null</string>
-  <string name="donate_roman">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MZD7JLRX6P99Y</string>
-  <string name="donate_whitehawk">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=8W7F2Y7S7KRM6</string>
-  <string name="donate_zaph">https://support.woundedwarriorproject.org/Default.aspx?tsid=66&amp;campaignSource=WEBSITE</string>
-  <string name="donate_protekk">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=YJTUMSBC2TRHS</string>
-  <string name="donate_khasmek">http://nyan.cat</string>
-  <string name="donate_sethyx">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=5R4DYJLDYDRAU</string>
-  <string name="donate_adam">http://goo.gl/fRj57</string>
-  <string name="donate_kwes">https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=HGAN9G5ZJ2AAS&amp;lc=US&amp;item_name=kwes1020&amp;currency_code=USD&amp;bn=PP%%2dDonationsBF%%3abtn_donateCC_LG%2egif%%3aNonHosted</string>
-  <string name="donate_nitroz">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=U27ZAWB8995TS</string>
-  <string name="donate_xoom">http://bit.ly/t7YC5Z</string>
-  <string name="donate_marclandis">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=7FN44KF8XZXFW</string>
-  <string name="donate_sixstringsg">https://www.paypal.com/cgi-bin/webscr?cmd=_flow&amp;SESSION=U3KYhTz6itHx8bKvx-F79EFVY5sQKKQu9f1ftkJ1pevFN6wdaJLu8yz3Y3e&amp;dispatch=5885d80a13c0db1f8e263663d3faee8d1e83f46a36995b3856cef1e18897ad75</string>
-  <string name="donate_just_reboot">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=WEZKU46DAFMSW</string>
-  <string name="donate_stevespear">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=6SY3WH7AZNR7Y</string>
-  <string name="donate_birdman">https://support.woundedwarriorproject.org/Default.aspx?tsid=66&amp;campaignSource=WEBSITE</string>
   <!--General UI-->
   <string name="bootani_cat">Startovací animace</string>
   <string name="navbar_cat">Navigační lišta</string>
   <string name="notification_cat">Notifikace</string>
   <string name="tabletUI_cat">Tabletové UI</string>
+  <string name="enable_volume_options">Zapnout volby hlasitosti</string>
   <string name="status_bar_notif_count_title">Zobrazit počet upozornění</string>
   <string name="status_bar_notif_count_summary">Zobrazit počet čekajících upozornění ve stavové liště</string>
   <string name="vibrate_notif_expand_title">Vibrovat při vytažení</string>
@@ -296,6 +286,7 @@
   <string name="toggle_brightness">Jas</string>
   <string name="toggle_sound_state">Hasitý/Vibrace/Tichý</string>
   <string name="toggle_navbar_hide">Auto. skrývání navigační lišty</string>
+  <string name="toggle_quickrecord">Rychlé nahrávání</string>
   <!--Statusbar | Battery-->
   <string name="battery_icon">Styl ikony baterie</string>
   <string name="battery_not_title">Ikona baterie ve stavové liště</string>
@@ -356,6 +347,21 @@
   <string name="navbar_action_notifications">Notifikace</string>
   <string name="navbar_action_none">Prázdné</string>
   <string name="navbar_widgets">Widgety v navigační liště</string>
+  <string name="navbar_enable_bar">Povolit lištu</string>
+  <string name="navigation_bar_height_title">Výška navigační lišty</string>
+  <string name="navigation_bar_height_summary">Výška navigační lišty v režimu na výšku</string>
+  <string name="navigation_bar_height_landscape_title">Výška navigační lišty v režimu na šířku</string>
+  <string name="navigation_bar_height_landscape_summary">Výška navigační lišty v režimu na šířku.</string>
+  <string name="navigation_bar_width_title">Šířka navigační lišty</string>
+  <string name="navigation_bar_width_summary">Šířka navigační lišty když je zobrazena na straně.</string>
+  <string name="navbar_enable_dialog_title">Vyžadován restart!</string>
+  <string name="navbar_enable_dialog_msg">Pro správnou funkčnost navigační lišty je dobré vždy restartovat (ale né nutné).</string>
+  <string name="navbar_enable_dialog_negative">Restartovat později</string>
+  <string name="navbar_enable_dialog_Positive">Restartovat nyní!</string>
+  <string name="navbar_height_dialog_title">Vyžadován restart!</string>
+  <string name="navbar_height_dialog_summary">Pro správnou změnu šířky navigační lišty je třeba restartovat!</string>
+  <string name="navbar_height_dialog_button_later">Restartovat později</string>
+  <string name="navbar_height_dialog_button_reboot">Restartovat nyní!</string>
   <string name="navigation_bar_color_title">Barva navigační lišty</string>
   <string name="navigation_bar_tint_title">Barva tlačítek navigační lišty</string>
   <string name="navigation_bar_colorall_title">Obarvit všechna tlačítka</string>
@@ -383,40 +389,34 @@
   <string name="drag_handle_width_title">Šírka symbolu vysunutí</string>
   <string name="title_navbar_timeout">Prodleva skrytí</string>
   <string name="summary_navbar_timeout">Doba, po které dojde ke skrytí okna navigační lišty</string>
+  <string name="hide_navbar_timeout_never">Nikdy</string>
+  <string name="hide_navbar_timeout_1500">1,5 sekundy</string>
+  <string name="hide_navbar_timeout_3000">3 sekundy</string>
+  <string name="hide_navbar_timeout_5000">5 sekund</string>
+  <string name="hide_navbar_timeout_10000">10 sekund</string>
+  <string name="hide_navbar_timeout_15000">15 sekund</string>
+  <string name="hide_navbar_timeout_30000">30 sekund</string>
   <!--Nav Ring Targets-->
-  <string name="navbar_ring_cat">Položky kruhu v navigační liště</string>
-  <string name="interface_softkey_settings">Nastavení tlačítek</string>
-  <string name="interface_softkeys_pref_default_1_title">Událost krátkého stisku pro 1. položku</string>
-  <string name="interface_softkeys_pref_long_1_title">Událost dlouhého stisku pro 1. položku</string>
-  <string name="interface_softkeys_pref_default_2_title">Událost krátkého stisku pro 2. položku</string>
-  <string name="interface_softkeys_pref_long_2_title">Událost dlouhého stisku pro 2. položku</string>
-  <string name="interface_softkeys_pref_default_3_title">Událost krátkého stisku pro 3. položku</string>
-  <string name="interface_softkeys_pref_long_3_title">Událost dlouhého stisku pro 3. položku</string>
-  <string name="interface_softkeys_pref_default_4_title">Událost krátkého stisku pro 4. položku</string>
-  <string name="interface_softkeys_pref_long_4_title">Událost dlouhého stisku pro 4. položku</string>
-  <string name="interface_softkeys_pref_default_5_title">Událost krátkého stisku pro 1. položku</string>
-  <string name="interface_softkeys_pref_long_5_title">Událost dlouhého stisku pro 5. položku</string>
-  <string name="interface_softkeys_pref_default_summary">Dotykem na ikonu nastavení je možné vybrat událost dlouhého stisku</string>
-  <string name="interface_softkeys_activity_dialog_title">Vybrat událost</string>
-  <string name="interface_softkeys_reboot_title">Menu restartování</string>
-  <string name="interface_softkeys_screenshot_title">Snímek obrazovky</string>
-  <string name="interface_softkeys_screenoff_title">Vypnutí obrazovky</string>
-  <string name="interface_softkeys_ime_switcher_title">Otevřít metody vstupu</string>
-  <string name="interface_softkeys_ring_vib_title">Přepnout hlasitý/vibrace</string>
-  <string name="interface_softkeys_ring_silent_title">Přepnout hlasitý/tichý</string>
-  <string name="interface_softkeys_ring_vib_silent_title">Přepnout hlasitý/vibrace/tichý</string>
-  <string name="interface_softkeys_kill_process_title">Ukončit aplikaci</string>
-  <string name="interface_softkey_package_removed">Předchozí vybraný balíček nebyl nalezen</string>
-  <string name="interface_navring_settings_title">Kruh navigační lišty</string>
-  <string name="interface_navring_settings_summary">Upravit vlastní aplikace kruhu navigační lišty</string>
-  <string name="title_navring_amount">Počet položek kruhu</string>
-  <string name="summary_navring_amount">Kolik je potřeba položek na kruhu? *Změna způsobí obnovení aktuálních položek a restartuje uživatelské rozhraní*</string>
-  <string name="interface_navring_custom_pref_summary">Uvolněním na položce dojde k aktivaci </string>
-  <string name="interface_navring_pref_default_summary">Dotykem je možné vybrat vlasní aktivitu na položce</string>
-  <string name="interface_navring_assist_title">Google Now</string>
-  <string name="interface_navring">Položky kruhu</string>
+  <string name="navbar_ring_cat">Položky navigačního kruhu</string>
   <string name="navbar_ring">Vlastní položky kruhu</string>
   <string name="navring_enable_long">Zapnout dlouhý stisk pro navigační kruh</string>
+  <string name="navring_target_save">Navigation rings saved</string>
+  <string name="navring_target_reset_message">Opravdu obnovit výchozí nastavení navigačního kruhu?</string>
+  <string name="navring_target_reset">Obnovení položek navigačního kruhu.</string>
+  <string name="choose_action_title">Zvolit akci</string>
+  <string name="choose_action_short_title">Zvolit krátkou akci</string>
+  <string name="choose_action_long_title">Zvolit dlouhou akci</string>
+  <string name="action_long_save"> nastavit jako dlouhou akci</string>
+  <string name="title_navring_amount">Počet položek navigačného kruhu</string>
+  <string name="summary_navring_amount">Zvolit počet položek v navigačním kruhu</string>
+  <string name="interface_navring_settings_title">Navigační kruh</string>
+  <string name="interface_navring_settings_summary">@null</string>
+  <string name="navring_target_info">Tažením prstu na položky je k nim možné přiřadit akce</string>
+  <string name="navring_short">Krátká akce</string>
+  <string name="navring_long">Dlouhá akce</string>
+  <string name="navring_icon">Vlastní ikona</string>
+  <string name="navring_target_amount_text">Aktuální počet položek</string>
+  <string name="navring_target_longpress_text">Stav dlouhého stisku</string>
   <!--LED-->
   <string name="led_on">LED svítí</string>
   <string name="led_time_on">Doba po kterou LED svítí</string>

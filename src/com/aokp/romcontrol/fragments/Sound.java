@@ -51,9 +51,8 @@ public class Sound extends AOKPPreferenceFragment
 
         mAnnoyingNotifications = (ListPreference) findPreference(PREF_LESS_NOTIFICATION_SOUNDS);
         mAnnoyingNotifications.setOnPreferenceChangeListener(this);
-        mAnnoyingNotifications.setValue(Integer.toString(Settings.System.getInt(getActivity()
-                .getContentResolver(), Settings.System.MUTE_ANNOYING_NOTIFICATIONS_THRESHOLD,
-                0)));
+        mAnnoyingNotifications.setValue(Integer.toString(Settings.System.getInt(mContentRes,
+                Settings.System.MUTE_ANNOYING_NOTIFICATIONS_THRESHOLD, 0)));
 
         mFlipAction = (ListPreference) findPreference(PREF_FLIP_ACTION);
         mFlipAction.setOnPreferenceChangeListener(this);
@@ -122,7 +121,7 @@ public class Sound extends AOKPPreferenceFragment
 
         } else if (preference == mAnnoyingNotifications) {
             int val = Integer.parseInt((String) newValue);
-            Settings.System.putInt(getActivity().getContentResolver(),
+            Settings.System.putInt(mContentRes,
                     Settings.System.MUTE_ANNOYING_NOTIFICATIONS_THRESHOLD, val);
             return true;
 
