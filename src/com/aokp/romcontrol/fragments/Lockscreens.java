@@ -36,6 +36,7 @@ import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
 import android.os.UserHandle;
+import android.preference.PreferenceFragment;
 import android.provider.MediaStore;
 import android.provider.Settings;
 import android.text.TextUtils;
@@ -63,7 +64,7 @@ import java.io.FileOutputStream;
 import java.net.URISyntaxException;
 import java.lang.NumberFormatException;
 
-public class Lockscreens extends Fragment implements
+public class Lockscreens extends AOKPPreferenceFragment implements
         ShortcutPickerHelper.OnPickListener, ColorPickerDialog.OnColorChangedListener,
         GlowPadView.OnTriggerListener {
     private static final String TAG = "Lockscreen";
@@ -79,6 +80,8 @@ public class Lockscreens extends Fragment implements
 
     private GlowPadView mGlowPadView;
     private TextView mHelperText;
+    private View mLockscreenOptions;
+    private boolean mIsLandscape;
 
     private Switch mLongPressStatus;
     private Switch mLockBatterySwitch;
@@ -186,6 +189,13 @@ public class Lockscreens extends Fragment implements
         super.onActivityCreated(savedInstanceState);
         mGlowPadView = ((GlowPadView) getActivity().findViewById(R.id.lock_target));
         mGlowPadView.setOnTriggerListener(this);
+        mLockscreenOptions = ((View) getActivity().findViewById(R.id.lockscreen_options));
+        if (mLockscreenOptions != null) {
+            mLockscreenOptions.getParent().bringChildToFront(mLockscreenOptions);
+            mIsLandscape = false;
+        } else {
+            mIsLandscape = true;
+        }
         mHelperText = ((TextView) getActivity().findViewById(R.id.helper_text));
         defaultColor = mResources
                 .getColor(com.android.internal.R.color.config_defaultNotificationColor);
@@ -312,6 +322,13 @@ public class Lockscreens extends Fragment implements
                         updateSwitches();
                     }
                 });
+
+        if (isTablet(mContext) || isPhablet(mContext)) {
+            Settings.System.putBoolean(cr,
+                Settings.System.LOCKSCREEN_MINIMIZE_LOCKSCREEN_CHALLENGE, false);
+            mLockMinimizeChallangeText.setVisibility(View.GONE);
+            mLockMinimizeChallangeSwitch.setVisibility(View.GONE);
+        }
 
         mLockCarouselText = ((TextView) getActivity().findViewById(R.id.lockscreen_carousel_id));
         mLockCarouselText.setOnClickListener(mLockCarouselTextListener);
@@ -656,6 +673,10 @@ public class Lockscreens extends Fragment implements
         }
         mBoolLongPress = (Settings.System.getBoolean(cr,
                 Settings.System.LOCKSCREEN_TARGETS_LONGPRESS, false));
+
+        if (mUnlockCounter() < 1) {
+            targetActivities[0] = AwesomeConstant.ACTION_UNLOCK.value();
+        }
         setDrawables();
     }
 
@@ -744,12 +765,16 @@ public class Lockscreens extends Fragment implements
 
     @Override
     public void onGrabbed(View v, int handle) {
-        updateVisiblity(false);
+        if (!mIsLandscape) {
+            updateVisiblity(false);
+        }
     }
 
     @Override
     public void onReleased(View v, int handle) {
-        updateVisiblity(true);
+        if (!mIsLandscape) {
+            updateVisiblity(true);
+        }
     }
 
     @Override
@@ -770,7 +795,7 @@ public class Lockscreens extends Fragment implements
 
         final AlertDialog dialog = new AlertDialog.Builder(mContext)
                 .setTitle(title)
-                .setSingleChoiceItems(entries, -1, l)
+                .setItems(entries, l)
                 .create();
 
         dialog.show();
